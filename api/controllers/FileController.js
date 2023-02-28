@@ -29,7 +29,7 @@ async function getListOfFiles(req, res) {
 async function createFile(req, res) {
   try {
     const response = await openai.createFile(
-      fs.createReadStream("./api/data/crazycars.jsonl"),
+      fs.createReadStream("./api/data/crazycars_updated.jsonl"),
       "fine-tune"
     )
 
