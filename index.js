@@ -2,7 +2,7 @@
 require('dotenv').config();
 var swaggerTools = require('swagger-tools');
 var app = require('express')();
-const http=require('https')
+const http=require('http')
 var jsyaml=require('js-yaml')
 var fs=require('fs')
 module.exports = app; 
