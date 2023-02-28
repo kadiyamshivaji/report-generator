@@ -1,0 +1,266 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Openai Rest-Services
+# during dev, should point to your local machine
+host: localhost:8080
+# basePath prefixes all resource paths 
+basePath: /
+# 
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /hello:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: openai
+    get:
+      description: Returns 'Hello' to the caller
+      # used as the method name of the controller
+      operationId: hello
+      parameters:
+        - name: name
+          in: query
+          description: The name of the person to whom to say hello
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/HelloWorldResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /completion:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: QueryController
+    get:
+      description: Returns Report Definition with params
+      tags:
+        - Query
+      # used as the method name of the controller
+      operationId: completion
+      parameters:
+        - name: prompt
+          in: query
+          description: Enter your prompt
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /completionv1:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: QueryController
+    get:
+      description: Returns Report Definition with params
+      tags:
+        - Query
+      # used as the method name of the controller
+      operationId: completionv1
+      parameters:
+        - name: prompt
+          in: query
+          description: Enter your prompt
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /list:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: FileController
+    get:
+      description: Returns list of uploaded files in openai
+      tags:
+        - File
+      # used as the method name of the controller
+      operationId: getListOfFiles
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /create:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: FileController
+    get:
+      description: Returns file id
+      tags:
+        - File
+      # used as the method name of the controller
+      operationId: createFile
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CreatFileResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /delete:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: FileController
+    delete:
+      description: Returns file id
+      tags:
+        - File
+      # used as the method name of the controller
+      operationId: deleteFile
+      parameters:
+        - name: fileId
+          in: query
+          description: File ID
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CreatFileResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /createFineTune:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: FineTuneController
+    get:
+      description: Returns fine tune data
+      tags:
+        - Fine Tune
+      # used as the method name of the controller
+      operationId: createFineTune
+      parameters:
+        - name: fileId
+          in: query
+          description: File ID
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /listfinetunes:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: FineTuneController
+    get:
+      description: Returns list of finetuned datsets
+      tags:
+        - Fine Tune
+      # used as the method name of the controller
+      operationId: getfineTuneList
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /deletefinetunes:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: FineTuneController
+    delete:
+      description: Returns list of finetuned datsets
+      tags:
+        - Fine Tune
+      # used as the method name of the controller
+      operationId: deleteFineTune
+      parameters:
+        - name: deleteFineTunedModel
+          in: query
+          description: FineTunedModel ID
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  HelloWorldResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  CompletionResponse:
+    required:
+      - data
+    properties:
+      status:
+        type: number
+      data:
+        type: object 
+  CreatFileResponse:
+    required:
+      - id
+    properties:
+      id:
+        type: string
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+      status:
+        type: number

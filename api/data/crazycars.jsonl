@@ -1,0 +1,42 @@
+{"prompt":"list of cars sold this month", "completion":"ListOfCarsSold,current month"}
+{"prompt":"show me list of cars sold this month", "completion":"ListOfCarsSold,current month"}
+{"prompt":"please show me list of cars sold this month", "completion":"ListOfCarsSold,current month"}
+{"prompt":"get me list of cars sold this month", "completion":"ListOfCarsSold,current month"}
+{"prompt":"fetch list of cars sold this month", "completion":"ListOfCarsSold,current month"}
+{"prompt":"please fetch list of cars sold this month", "completion":"ListOfCarsSold,current month"}
+{"prompt":"list of cars sold this month", "completion":"ListOfCarsSold,current month"}
+{"prompt":"list of cars sold this year", "completion":"ListOfCarsSold,current year"}
+{"prompt":"show me list of cars sold this year", "completion":"ListOfCarsSold,current year"}
+{"prompt":"please show me list of cars sold this year", "completion":"ListOfCarsSold,current year"}
+{"prompt":"get me list of cars sold this year", "completion":"ListOfCarsSold,current year"}
+{"prompt":"fetch list of cars sold this year", "completion":"ListOfCarsSold,current year"}
+{"prompt":"please fetch list of cars sold this year", "completion":"ListOfCarsSold,current year"}
+{"prompt":"list of cars sold this year", "completion":"ListOfCarsSold,current year"}
+{"prompt":"Audi cars sold by agent Ram in previous month", "completion":"ListofCarsSoldComplex,Audi,Ram,Previous Month"}
+{"prompt":"list of cars sold by agent Mat in previous year", "completion":"ListofCarsSoldComplex,Any,Mat,Previous Year"}
+{"prompt":"Benz cars sold in this year", "completion":"ListofCarsSoldComplex,Benz,Any,Current Year"}
+{"prompt":"Toyota cars sold by agent Smith in this quarter", "completion":"ListofCarsSoldComplex,Toyota,Smith,Current Quarter"}
+{"prompt":"Honda cars sold by John for last three months", "completion":"ListofCarsSoldComplex,Honda,John,last 90 days"}
+{"prompt":"How many Benz cars sold by Ram in this month", "completion":"ListofCarsSoldComplex,Benz,Ram,Current Month"}
+{"prompt":"How many cars sold by agent Mat so far", "completion":"ListofCarsSoldComplex,Any,Mat,Current Year"}
+{"prompt":"Benz cars sold on 01/01/2023", "completion":"ListofCarsSoldComplex,Benz,Any,1/1/2023"}
+{"prompt":"How many Toyota cars sold by agent Smith in this quarter", "completion":"ListofCarsSoldComplex,Toyota,Smith,Current Quarter"}
+{"prompt":"list of Honda cars sold by John for last three months", "completion":"ListofCarsSoldComplex,Honda,John,last 90 days"}
+{"prompt":"list of Benz cars sold by Ram in this month", "completion":"ListofCarsSoldComplex,Benz,Ram,Current Month"}
+{"prompt":"show me list of cars sold by agent Mat so far", "completion":"ListofCarsSoldComplex,Any,Mat,Current Year"}
+{"prompt":"fetch Benz cars sold by Ram in this month", "completion":"ListofCarsSoldComplex,Benz,Ram,Current Month"}
+{"prompt":"fetch cars sold by agent Mat so far", "completion":"ListofCarsSoldComplex,Any,Mat,Current Year"}
+{"prompt":"list of Benz cars sold to customers who have the income greater than $1000", "completion":"CustomerTrends,$1000,Benz"}
+{"prompt":"show me list of cars sold to customers whose income greater than $20000", "completion":"CustomerTrends,$20000,Any"}
+{"prompt":"fetch Benz cars sold to customer income greater than $30000", "completion":"CustomerTrends,$30000,Benz"}
+{"prompt":"Did any customer who have income greater than 1000 bought Audi", "completion":"CustomerTrends,$1000,Audi"}
+{"prompt":"get the list of Benz cars sold to customers who have the income greater than $1000", "completion":"CustomerTrends,$1000,Benz"}
+{"prompt":"how many cars sold to customers whose income greater than $20000", "completion":"CustomerTrends,$20000,Any"}
+{"prompt":"how many benz cars sold to customer income greater than $30000", "completion":"CustomerTrends,$30000,Benz"}
+{"prompt":"Did any customer who have income greater than 1000 bought Audi", "completion":"CustomerTrends,$1000,Audi"}
+{"prompt":"show me customer who have bought Honda but their income is greater than $20000", "completion":"SummaryCustomerTrends,$20000,Honda"}
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000", "completion":"SummaryCustomerTrends,$30000,Toyota"}
+{"prompt":"how many customers bought Audi who have income is greater than $30000", "completion":"SummaryCustomerTrends,$30000,Audi"}
+{"prompt":"list of customers who have bought Toyota but their income is greater than $30000", "completion":"SummaryCustomerTrends,$30000,Toyota"}
+{"prompt":"list of customer who have bought Honda but their income is greater than $20000", "completion":"SummaryCustomerTrends,$20000,Honda"}
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000", "completion":"SummaryCustomerTrends,$30000,Toyota"}
