@@ -144,29 +144,21 @@ async function completionv1(req, res) {
 
     // const english =entitiesObj.slice("English".length,englishObj.length).trim()
     const response = {
-      status: 200,
-      data: {
-        query: prompt,
-        reportDefinition: "",
-        params: [
+      "status": 200,
+      "data": {
+        "query": "test",
+        "reportDefinition": "",
+        "params": [
           {
-            type: "date",
-            value: "Current Year",
-          },
-          {
-            type: "agent",
-            value: "Smith",
-          },
-          {
-            type: "color",
-            value: "Black",
-          },
-          {
-            type: "car",
-            value: "Audi",
-          },
-        ],
-      },
+            "CarSoldDate": "",
+            "AgentName": "",
+            "CarColor": "Black",
+            "CarBrand": "Audi",
+            "CustomerIncome": "",
+            "EstimatedDateOfDelivery": ""
+          }
+        ]
+      }
     }
     res.status(200).send(response)
   } catch (error) {

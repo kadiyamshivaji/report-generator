@@ -72,7 +72,7 @@ paths:
     # binds a127 app logic to a route
     x-swagger-router-controller: QueryController
     get:
-      description: Returns Report Definition with params
+      description: Returns static response for integration purpose
       tags:
         - Query
       # used as the method name of the controller
