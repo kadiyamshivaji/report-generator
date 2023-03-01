@@ -19,7 +19,7 @@ const colors = {
   gray: "gray",
 }
 function validation(typeName, value) {
-  const itemObj=   typeName === 'cars'? cars:agents;
+  const itemObj = typeName === "cars" ? cars : agents
   if (!itemObj[value]) {
     return `please select any one of the available ${typeName} eg:${Object.keys(
       itemObj
@@ -39,6 +39,24 @@ function validation(typeName, value) {
   //   return 'pass'
   // }
 }
+const rdList = [
+  "ListOfCarsSold",
+  "ListofCarsSoldComplex",
+  "CustomerTrends",
+  "SummaryCustomerTrends",
+]
+
+function validateRD(rd) {
+  const findRD = rdList.filter(
+    (item) => item.toLowerCase() === rd.toLowerCase()
+  )
+  if (findRD.length === 0) {
+    return "We regret to process you with correct details. Could you please try again by changing of your request"
+  } else {
+    return "pass"
+  }
+}
 module.exports = {
   validation: validation,
+  validateRD: validateRD,
 }

@@ -1,7 +1,7 @@
 "use strict"
 const { Configuration, OpenAIApi } = require("openai")
 const fs = require("fs")
-const { validation } = require("../helpers")
+const { validation, validateRD } = require("../helpers")
 const { env } = require("process")
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -144,13 +144,14 @@ async function completionv1(req, res) {
   try {
     // const info = await getPromptInfo(prompt)
     const completion = await openai.createCompletion({
-      model:process.env.MODEL,
-      prompt: `Translate below statement to english and get the output\n${prompt} ->`,
+      model: process.env.MODEL,
+      //  prompt: `Translate below statement to english and get the output\n${prompt} ->`,
+      prompt: ` Translate the below statement to english and give the completion
+  ${prompt} ->`,
       max_tokens: 250,
       temperature: 0,
       top_p: 1,
-      logprobs: 2,
-      stop: " END"
+      stop: " END",
     })
     // const response =completion.data.choices[0].text.split('\n').filter(item=>item !=='');
     // const keywordsObj =response.find(item=>item.includes("Keywords:"));
@@ -162,28 +163,44 @@ async function completionv1(req, res) {
 
     // const english =entitiesObj.slice("English".length,englishObj.length).trim()
 
-    const dummyResponse = completion.data.choices[0].text;
+    const dummyResponse = completion.data.choices[0].text
     //  "RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"
     const dRArr = dummyResponse.split(",")
+    // rd
+    //rd
+    let rd = dRArr.find((item) => item.includes("RD:"))
+    rd = rd ? rd.split(":")[1] : ""
+    if (rd && rd.length > 0) {
+      const msg = validateRD(rd)
+
+      if (msg !== "pass") {
+        const response = {
+          status: 404,
+          message: msg,
+        }
+        return res.status(200).send(response)
+      }
+    }
     //car
     const carObj = dRArr.find((item) => item.includes("MF:"))
-    let carName = ""
-    if (carObj) {
-      carName = carObj.split(":")[1].toLowerCase();
+    let carName = carObj && carObj.split(":")[1].toLowerCase()
+    carName = carName === "any" ? "" : carName
+    if (carName && carName.length > 0) {
       const validateCar = validation("cars", carName)
       if (validateCar !== "pass") {
         const response = {
           status: 404,
           message: validateCar,
         }
-       return res.status(200).send(response)
+        return res.status(200).send(response)
       }
     }
 
     //agent
     const agentObj = dRArr.find((item) => item.includes("AG:"))
-    let agentName = ""
-    if (agentObj) {
+    let agentName = agentObj && agentObj.split(":")[1].toLowerCase()
+    agentName = agentName === "any" ? "" : agentName
+    if (agentName && agentName.length > 0) {
       agentName = agentObj.split(":")[1].toLowerCase()
       const validateAgent = validation("agents", agentName)
       if (validateAgent !== "pass") {
@@ -191,20 +208,17 @@ async function completionv1(req, res) {
           status: 404,
           message: validateAgent,
         }
-       return res.status(200).send(response)
+        return res.status(200).send(response)
       }
     }
 
-    //rd
-    let rd = dRArr.find((item) => item.includes("RD:"))
-    rd = rd ? rd.split(":")[1] : ""
     // time
     let tf = dRArr.find((item) => item.includes("TF:"))
     tf = tf ? tf.split(":")[1] : ""
 
     // income
     let af = dRArr.find((item) => item.includes("AF:"))
-    af = af ? af.split(":")[1] : ""
+    af = af ? af.split(":")[1].replace("$", "") : ""
 
     const response = {
       status: 200,
