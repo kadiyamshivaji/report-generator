@@ -217,7 +217,7 @@ async function completionv1(req, res) {
 
     // income
     let af = dRArr.find((item) => item.includes("AF:"))
-    af = af ? af.split(":")[1].replace("$", "") : ""
+    af = af ? af.split(":")[1].replace(/\$/g,"") : ""
 
     const response = {
       status: 200,
