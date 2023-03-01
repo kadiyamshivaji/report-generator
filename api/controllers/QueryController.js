@@ -146,8 +146,7 @@ async function completionv1(req, res) {
     const completion = await openai.createCompletion({
       model: process.env.MODEL,
       //  prompt: `Translate below statement to english and get the output\n${prompt} ->`,
-      prompt: ` Translate the below statement to english and give the completion
-  ${prompt} ->`,
+      prompt: `${prompt} ->`,
       max_tokens: 250,
       temperature: 0,
       top_p: 1,
@@ -163,9 +162,9 @@ async function completionv1(req, res) {
 
     // const english =entitiesObj.slice("English".length,englishObj.length).trim()
 
-    const dummyResponse = completion.data.choices[0].text
+    const openaiResponse = completion.data.choices[0].text
     //  "RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"
-    const dRArr = dummyResponse.split(",")
+    const dRArr = openaiResponse.split(",")
     // rd
     //rd
     let rd = dRArr.find((item) => item.includes("RD:"))

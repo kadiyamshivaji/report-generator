@@ -1,0 +1,315 @@
+{"prompt":"list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"show me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"please show me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"get me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"fetch list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"please fetch list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"show me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"please show me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"get me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"fetch list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"please fetch list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"Audi cars sold by agent Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"Audi cars sold by Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"Audi sold by Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"list of cars sold by agent Mat in previous year ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Previous Year END"} 
+{"prompt":"list of cars sold by Mat in previous year ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Previous Year END"} 
+{"prompt":"Benz cars sold in this year ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"Toyota cars sold by agent Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"Toyota cars sold by Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"Honda cars sold by John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"Honda sold by agent John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"How many Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"How many Benz sold by agent Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"How many cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"Benz cars sold on 01/01/2023 ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:1/1/2023 END"} 
+{"prompt":"How many Toyota cars sold by agent Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"list of Honda cars sold by John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"list of Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"show me list of cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"fetch Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"fetch cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"list of Benz cars sold to customers who have the income greater than $1000 ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Benz END"} 
+{"prompt":"show me list of cars sold to customers whose income greater than $20000 ->", "completion":"RD:CustomerTrends,AF:$20000 END"} 
+{"prompt":"fetch Benz cars sold to customer income greater than $30000 ->", "completion":"RD:CustomerTrends,AF:$30000,MF:Benz END"} 
+{"prompt":"Did any customer who have income greater than 1000 bought Audi ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Audi END"} 
+{"prompt":"get the list of Benz cars sold to customers who have the income greater than $1000 ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Benz END"} 
+{"prompt":"how many cars sold to customers whose income greater than $20000 ->", "completion":"RD:CustomerTrends,AF:$20000 END"} 
+{"prompt":"how many benz sold to customer income greater than $30000 ->", "completion":"RD:CustomerTrends,AF:$30000,MF:Benz END"} 
+{"prompt":"Did any customer who have income greater than 1000 bought Audi ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Audi END"} 
+{"prompt":"show me customer who have bought Honda but their income is greater than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}
+{"prompt":"Get customers who have purchased Honda and make more than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"Find customers who bought Toyota and earn over $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}  
+{"prompt":"how many customers bought Audi who have income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Audi END"} 
+{"prompt":"Display customers who bought a Audi and make over $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Audi END"} 
+{"prompt":"list of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"} 
+{"prompt":"list of customer who have bought Honda but their income is greater than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"} 
+{"prompt":"list of cars sold last 7 days ->", "completion":"RD:ListOfCarsSold,TF:last 7 days END"} 
+{"prompt":"show me list of cars sold last 30 days ->", "completion":"RD:ListOfCarsSold,TF:last 30 days END"} 
+{"prompt":"please show me list of cars sold last 90 days ->", "completion":"RD:ListOfCarsSold,TF:last 90 days END"} 
+{"prompt":"show me list of cars sold current and previous year ->", "completion":"RD:ListOfCarsSold,TF:current and previous year END"} 
+{"prompt":"please show me list of cars sold current and previous month ->", "completion":"RD:ListOfCarsSold,TF:current and previous month END"} 
+{"prompt":"get me list of cars sold current and previous quater ->", "completion":"RD:ListOfCarsSold,TF:current and previous quater END"} 
+{"prompt":"list of cars sold current week ->", "completion":"RD:ListOfCarsSold,TF:current week END"} 
+{"prompt":"business report for this year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Total transactions completed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Aggregate sales over the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total sales volume over the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Aggregate business conducted in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total deals closed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Overall business completed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total commerce generated in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":" Overall transactions in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"get me the business report for this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"show me business statement for this week ->", "completion":"RD:BusinessReport,TF:current week END"} 
+{"prompt":"fetch the car brands sold this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"business report for this year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Give the business statistics for current year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Business summary records for this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"Sales have taken place for customers with an income range of 1000-5000 ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"list of sales happens for the customer income range between 1000 and 5000 ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Sales have been made to customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Customers who have an income range of 1000-5000 have made purchases ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Purchases have been made by customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"There have been sales to customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Sales have taken place for customers with an income range of 5600-10000 ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"list of sales happens for the customer income range between 5600 and 10000->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Sales have been made to customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Customers who have an income range of 5600-10000 have made purchases ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Purchases have been made by customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"There have been sales to customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"What are the sales for the month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"How much did we sell this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What are this month's sales figures? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What have we sold this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What have been our sales this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"Show me the sales for last month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"What are the sales for current month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Can you provide me the sales for last year ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Retrieve the sales for last 120 days ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Please provide the sales for current and previous month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"How many Benz cars were sold in this year? ->","completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"What is the sales figure of Benz cars this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"What is the total number of Benz cars sold this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"How many Benz cars have been sold this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"}
+{"prompt":"Provide me a summary of customers who purchased Honda and have an income of more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"}
+{"prompt":"Show me a summary of customers who bought Audi and earn more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Audi END"}
+{"prompt":"Give me a summary of customers with an income over $30,000 who bought Toyota ->","completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}
+{"prompt":"Provide me a summary of customers who purchased Audi and have an income of more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Audi END"}
+{"prompt":"Show me a summary of customers who bought Honda and earn more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"}
+{"prompt":"Give me a summary of customers with an income over $20,000 who bought Toyota ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Toyota END"}
+{"prompt":"list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"show me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"please show me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"get me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"fetch list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"please fetch list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"show me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"please show me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"get me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"fetch list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"please fetch list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"Audi cars sold by agent Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"Audi cars sold by Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"Audi sold by Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"list of cars sold by agent Mat in previous year ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Previous Year END"} 
+{"prompt":"list of cars sold by Mat in previous year ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Previous Year END"} 
+{"prompt":"Benz cars sold in this year ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"Toyota cars sold by agent Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"Toyota cars sold by Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"Honda cars sold by John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"Honda sold by agent John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"How many Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"How many Benz sold by agent Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"How many cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"Benz cars sold on 01/01/2023 ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:1/1/2023 END"} 
+{"prompt":"How many Toyota cars sold by agent Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"list of Honda cars sold by John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"list of Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"show me list of cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"fetch Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"fetch cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"list of Benz cars sold to customers who have the income greater than $1000 ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Benz END"} 
+{"prompt":"show me list of cars sold to customers whose income greater than $20000 ->", "completion":"RD:CustomerTrends,AF:$20000 END"} 
+{"prompt":"fetch Benz cars sold to customer income greater than $30000 ->", "completion":"RD:CustomerTrends,AF:$30000,MF:Benz END"} 
+{"prompt":"Did any customer who have income greater than 1000 bought Audi ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Audi END"} 
+{"prompt":"get the list of Benz cars sold to customers who have the income greater than $1000 ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Benz END"} 
+{"prompt":"how many cars sold to customers whose income greater than $20000 ->", "completion":"RD:CustomerTrends,AF:$20000 END"} 
+{"prompt":"how many benz sold to customer income greater than $30000 ->", "completion":"RD:CustomerTrends,AF:$30000,MF:Benz END"} 
+{"prompt":"Did any customer who have income greater than 1000 bought Audi ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Audi END"} 
+{"prompt":"show me customer who have bought Honda but their income is greater than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}
+{"prompt":"Get customers who have purchased Honda and make more than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"Find customers who bought Toyota and earn over $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}  
+{"prompt":"how many customers bought Audi who have income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Audi END"} 
+{"prompt":"Display customers who bought a Audi and make over $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Audi END"} 
+{"prompt":"list of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"} 
+{"prompt":"list of customer who have bought Honda but their income is greater than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"} 
+{"prompt":"list of cars sold last 7 days ->", "completion":"RD:ListOfCarsSold,TF:last 7 days END"} 
+{"prompt":"show me list of cars sold last 30 days ->", "completion":"RD:ListOfCarsSold,TF:last 30 days END"} 
+{"prompt":"please show me list of cars sold last 90 days ->", "completion":"RD:ListOfCarsSold,TF:last 90 days END"} 
+{"prompt":"show me list of cars sold current and previous year ->", "completion":"RD:ListOfCarsSold,TF:current and previous year END"} 
+{"prompt":"please show me list of cars sold current and previous month ->", "completion":"RD:ListOfCarsSold,TF:current and previous month END"} 
+{"prompt":"get me list of cars sold current and previous quater ->", "completion":"RD:ListOfCarsSold,TF:current and previous quater END"} 
+{"prompt":"list of cars sold current week ->", "completion":"RD:ListOfCarsSold,TF:current week END"} 
+{"prompt":"business report for this year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Total transactions completed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Aggregate sales over the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total sales volume over the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Aggregate business conducted in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total deals closed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Overall business completed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total commerce generated in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":" Overall transactions in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"get me the business report for this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"show me business statement for this week ->", "completion":"RD:BusinessReport,TF:current week END"} 
+{"prompt":"fetch the car brands sold this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"business report for this year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Give the business statistics for current year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Business summary records for this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"Sales have taken place for customers with an income range of 1000-5000 ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"list of sales happens for the customer income range between 1000 and 5000 ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Sales have been made to customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Customers who have an income range of 1000-5000 have made purchases ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Purchases have been made by customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"There have been sales to customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Sales have taken place for customers with an income range of 5600-10000 ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"list of sales happens for the customer income range between 5600 and 10000->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Sales have been made to customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Customers who have an income range of 5600-10000 have made purchases ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Purchases have been made by customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"There have been sales to customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"What are the sales for the month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"How much did we sell this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What are this month's sales figures? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What have we sold this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What have been our sales this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"Show me the sales for last month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"What are the sales for current month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Can you provide me the sales for last year ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Retrieve the sales for last 120 days ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Please provide the sales for current and previous month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"How many Benz cars were sold in this year? ->","completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"What is the sales figure of Benz cars this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"What is the total number of Benz cars sold this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"How many Benz cars have been sold this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"}
+{"prompt":"Provide me a summary of customers who purchased Honda and have an income of more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"}
+{"prompt":"Show me a summary of customers who bought Audi and earn more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Audi END"}
+{"prompt":"Give me a summary of customers with an income over $30,000 who bought Toyota ->","completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}
+{"prompt":"Provide me a summary of customers who purchased Audi and have an income of more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Audi END"}
+{"prompt":"Show me a summary of customers who bought Honda and earn more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"}
+{"prompt":"Give me a summary of customers with an income over $20,000 who bought Toyota ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Toyota END"}
+{"prompt":"list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"show me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"please show me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"get me list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"fetch list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"please fetch list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"list of cars sold this month ->", "completion":"RD:ListOfCarsSold,TF:current month END"} 
+{"prompt":"list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"show me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"please show me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"get me list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"fetch list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"please fetch list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"list of cars sold this year ->", "completion":"RD:ListOfCarsSold,TF:current year END"} 
+{"prompt":"Audi cars sold by agent Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"Audi cars sold by Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"Audi sold by Ram in previous month ->", "completion":"RD:ListofCarsSoldComplex,MF:Audi,AG:Ram,TF:Previous Month END"} 
+{"prompt":"list of cars sold by agent Mat in previous year ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Previous Year END"} 
+{"prompt":"list of cars sold by Mat in previous year ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Previous Year END"} 
+{"prompt":"Benz cars sold in this year ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"Toyota cars sold by agent Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"Toyota cars sold by Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"Honda cars sold by John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"Honda sold by agent John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"How many Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"How many Benz sold by agent Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"How many cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"Benz cars sold on 01/01/2023 ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:1/1/2023 END"} 
+{"prompt":"How many Toyota cars sold by agent Smith in this quarter ->", "completion":"RD:ListofCarsSoldComplex,MF:Toyota,AG:Smith,TF:Current Quarter END"} 
+{"prompt":"list of Honda cars sold by John for last three months ->", "completion":"RD:ListofCarsSoldComplex,MF:Honda,AG:John,TF:last 90 days END"} 
+{"prompt":"list of Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"show me list of cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"fetch Benz cars sold by Ram in this month ->", "completion":"RD:ListofCarsSoldComplex,MF:Benz,AG:Ram,TF:Current Month END"} 
+{"prompt":"fetch cars sold by agent Mat so far ->", "completion":"RD:ListofCarsSoldComplex,AG:Mat,TF:Current Year END"} 
+{"prompt":"list of Benz cars sold to customers who have the income greater than $1000 ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Benz END"} 
+{"prompt":"show me list of cars sold to customers whose income greater than $20000 ->", "completion":"RD:CustomerTrends,AF:$20000 END"} 
+{"prompt":"fetch Benz cars sold to customer income greater than $30000 ->", "completion":"RD:CustomerTrends,AF:$30000,MF:Benz END"} 
+{"prompt":"Did any customer who have income greater than 1000 bought Audi ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Audi END"} 
+{"prompt":"get the list of Benz cars sold to customers who have the income greater than $1000 ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Benz END"} 
+{"prompt":"how many cars sold to customers whose income greater than $20000 ->", "completion":"RD:CustomerTrends,AF:$20000 END"} 
+{"prompt":"how many benz sold to customer income greater than $30000 ->", "completion":"RD:CustomerTrends,AF:$30000,MF:Benz END"} 
+{"prompt":"Did any customer who have income greater than 1000 bought Audi ->", "completion":"RD:CustomerTrends,AF:$1000,MF:Audi END"} 
+{"prompt":"show me customer who have bought Honda but their income is greater than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}
+{"prompt":"Get customers who have purchased Honda and make more than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"Find customers who bought Toyota and earn over $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}  
+{"prompt":"how many customers bought Audi who have income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Audi END"} 
+{"prompt":"Display customers who bought a Audi and make over $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Audi END"} 
+{"prompt":"list of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"} 
+{"prompt":"list of customer who have bought Honda but their income is greater than $20000 ->", "completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"} 
+{"prompt":"trend of customers who have bought Toyota but their income is greater than $30000 ->", "completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"} 
+{"prompt":"list of cars sold last 7 days ->", "completion":"RD:ListOfCarsSold,TF:last 7 days END"} 
+{"prompt":"show me list of cars sold last 30 days ->", "completion":"RD:ListOfCarsSold,TF:last 30 days END"} 
+{"prompt":"please show me list of cars sold last 90 days ->", "completion":"RD:ListOfCarsSold,TF:last 90 days END"} 
+{"prompt":"show me list of cars sold current and previous year ->", "completion":"RD:ListOfCarsSold,TF:current and previous year END"} 
+{"prompt":"please show me list of cars sold current and previous month ->", "completion":"RD:ListOfCarsSold,TF:current and previous month END"} 
+{"prompt":"get me list of cars sold current and previous quater ->", "completion":"RD:ListOfCarsSold,TF:current and previous quater END"} 
+{"prompt":"list of cars sold current week ->", "completion":"RD:ListOfCarsSold,TF:current week END"} 
+{"prompt":"business report for this year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Total transactions completed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Aggregate sales over the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total sales volume over the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Aggregate business conducted in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total deals closed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Overall business completed in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"Total commerce generated in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":" Overall transactions in the last 30 days ->", "completion":"RD:BusinessReport,TF:Last 30 Days END"} 
+{"prompt":"get me the business report for this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"show me business statement for this week ->", "completion":"RD:BusinessReport,TF:current week END"} 
+{"prompt":"fetch the car brands sold this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"business report for this year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Give the business statistics for current year ->", "completion":"RD:BusinessReport,TF:current year END"} 
+{"prompt":"Business summary records for this month ->", "completion":"RD:BusinessReport,TF:current month END"} 
+{"prompt":"Sales have taken place for customers with an income range of 1000-5000 ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"list of sales happens for the customer income range between 1000 and 5000 ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Sales have been made to customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Customers who have an income range of 1000-5000 have made purchases ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Purchases have been made by customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"There have been sales to customers within the 1000-5000 income range ->", "completion":"RD:BuyerRangeReport,AF:1000-5000 END"} 
+{"prompt":"Sales have taken place for customers with an income range of 5600-10000 ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"list of sales happens for the customer income range between 5600 and 10000->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Sales have been made to customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Customers who have an income range of 5600-10000 have made purchases ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"Purchases have been made by customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"There have been sales to customers within the 5600-10000 income range ->", "completion":"RD:BuyerRangeReport,AF:5600-10000 END"} 
+{"prompt":"What are the sales for the month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"How much did we sell this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What are this month's sales figures? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What have we sold this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"What have been our sales this month? ->","completion": "RD:MonthWiseSales END"} 
+{"prompt":"Show me the sales for last month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"What are the sales for current month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Can you provide me the sales for last year ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Retrieve the sales for last 120 days ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"Please provide the sales for current and previous month ->", "completion":"RD:MonthWiseSales END"} 
+{"prompt":"How many Benz cars were sold in this year? ->","completion":"RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"What is the sales figure of Benz cars this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"What is the total number of Benz cars sold this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"} 
+{"prompt":"How many Benz cars have been sold this year? ->","completion": "RD:ListofCarsSoldComplex,MF:Benz,TF:Current Year END"}
+{"prompt":"Provide me a summary of customers who purchased Honda and have an income of more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"}
+{"prompt":"Show me a summary of customers who bought Audi and earn more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Audi END"}
+{"prompt":"Give me a summary of customers with an income over $30,000 who bought Toyota ->","completion":"RD:SummaryCustomerTrends,AF:$30000,MF:Toyota END"}
+{"prompt":"Provide me a summary of customers who purchased Audi and have an income of more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Audi END"}
+{"prompt":"Show me a summary of customers who bought Honda and earn more than $20,000 ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Honda END"}
+{"prompt":"Give me a summary of customers with an income over $20,000 who bought Toyota ->","completion":"RD:SummaryCustomerTrends,AF:$20000,MF:Toyota END"}

@@ -44,6 +44,9 @@ const rdList = [
   "ListofCarsSoldComplex",
   "CustomerTrends",
   "SummaryCustomerTrends",
+  "MonthWiseSales",
+  "BuyerRangeReport",
+  "BusinessReport"
 ]
 
 function validateRD(rd) {
