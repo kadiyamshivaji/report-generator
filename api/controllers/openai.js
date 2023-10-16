@@ -1,5 +1,7 @@
 "use strict"
 const { Configuration, OpenAIApi } = require("openai")
+const cheerio = require("cheerio")
+
 const fs = require("fs")
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -16,6 +18,7 @@ module.exports = {
   deleteFile: deleteFile,
   createFineTune: createFineTune,
   getfineTuneList: getfineTuneList,
+  getPatchResolvedIssues: getPatchResolvedIssues,
 }
 
 /*
@@ -28,9 +31,34 @@ function hello(req, res) {
   // variables defined in the Swagger document can be referenced using req.swagger.params.{parameter_name}
   var name = req.swagger.params.name.value || "stranger"
   var hello = util.format("Hello, %s!", name)
-
-  // this sends back a JSON response which is a single string
   res.json(hello)
+}
+function getPatchResolvedIssues(req, res) {
+  // variables defined in the Swagger document can be referenced using req.swagger.params.{parameter_name}
+  var version = req.swagger.params.version.value || "881"
+  fetch(
+    `https://support.pega.com/support-doc/pega-platform-${version}-patch-resolved-issues`
+  )
+    .then((res) => res.text())
+    .then((ress) => {
+      // Load the HTML string into a cheerio instance
+      const $ = cheerio.load(ress)
+      // Create an array to store the "Country" column data
+      const patchRelease = new Object()
+
+      $("table tbody tr").each((index, row) => {
+        const columns = $(row).find("td")
+        if (columns.length === 5) {
+          const backlog = $(columns[4]).text()
+          if (patchRelease[backlog]) {
+            patchRelease[backlog].push($(columns[3]).text())
+          } else {
+            patchRelease[backlog] = new Array($(columns[3]).text())
+          }
+        }
+      })
+      res.json(patchRelease)
+    })
 }
 async function completions(req, res) {
   if (!configuration.apiKey) {

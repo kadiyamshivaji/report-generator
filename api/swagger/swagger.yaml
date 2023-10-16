@@ -42,6 +42,30 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
+  /patch-resolved-issues:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: openai
+    get:
+      description: Returns 'Hello' to the caller
+      # used as the method name of the controller
+      operationId: getPatchResolvedIssues
+      parameters:
+        - name: version
+          in: query
+          description: platform version
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/HelloWorldResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
   /completion:
     # binds a127 app logic to a route
     x-swagger-router-controller: QueryController
@@ -219,6 +243,73 @@ paths:
         - name: deleteFineTunedModel
           in: query
           description: FineTunedModel ID
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /htmlToPdf:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: HtmlToPDFController
+    post:
+      description: Generate PDF
+      tags:
+        - HTMLToPDF
+      # used as the method name of the controller
+      operationId: htmlToPdf
+      parameters:
+        - name: pdfRequest
+          in: body
+          description: parameters to generate PDF.
+          schema:
+            type: object
+            required:
+              - htmlcode
+            properties:
+              htmlcode:
+                type: string
+              orientation:
+                type: string
+              headerTemplate:
+                type: string
+              footerTemplate:
+                type: string
+              size:
+                type: string
+              fileName:
+                type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/CompletionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /pdfToSummary:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: HtmlToPDFController
+    get:
+      description: Returns Summry Points
+      tags:
+        - HTMLToPDF
+      # used as the method name of the controller
+      operationId: pdfToSumary
+      parameters:
+        - name: prompt
+          in: query
+          description: Enter your prompt
           required: false
           type: string
       responses:
